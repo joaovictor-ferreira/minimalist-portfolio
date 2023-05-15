@@ -9,188 +9,233 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<header>
-
-   <div class="menu__container">
-    <nav class="menu__nav">
-        <h1>João Victor Ferreira</h1>   
-        <ul class="menu__ul" id="menu-redirect">
-            <li class="nav__li"><a href="#home">home</a></li>
-            <li class="nav__li"><a href="#skills">skills</a></li>
-            <li class="nav__li"><a href="#portfolio">portfolio</a></li>
-            <li class="nav__li"><a href="#contact">contato</a></li>
-        </ul>
-    </nav>
-   </div> 
-
-</header>
-
 <body>
+    <header id="menu">
+         <nav class="menu__container">
+             <h4>João Victor Ferreira</h4>   
+             <ul class="menu__ul" id="menu-redirect">
+                 <li class="nav__li"><a href="#home-section" class="active">home</a></li>
+                 <li class="nav__li"><a href="#about-me-section">Sobre</a></li>
+                 <li class="nav__li"><a href="#skills-section">skills</a></li>
+                 <li class="nav__li"><a href="#portfolio-section">portfolio</a></li>
+                 <li class="nav__li"><a href="#contact-section">contato</a></li>
+             </ul>
+
+             <i class="fa-regular fa-moon dark-mode-btn fa-xl" ></i>
+             <i class="fa-solid fa-bars" id="toggle"></i>
+         </nav>
+    </header>
     <main>  
-        
-        <section class="hp__container homepage" id="home">
-            
-            <div class="aside">
-                <a href="https://github.com/joaovictor-ferreira" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa__icon"></i></a>                
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-eth/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in fa__icon"></i></a>            
+        <section id="home-section">
+            <div class="container">
 
-            </div>
+            <div class="content__container">
 
-            <div class="left-hp">
-                <h2 class="home__h2">Olá, eu sou o João!</h2>
-            <p class="subtitle-p">Desenvolvedor front-end</p>
-            <p class="home__paragraph">Experiência em desenvolvimento web, engenharia de requisitos e desenvolvimento blockchain, produzindo serviços qualificados.</p>
-            <button id="btn-contact" class="default-btn" href="">Contate-me &#8658;</button> 
-            </div>
-            
-            <div class="right-hp"> 
-                <img id="home__img" src="/assets/greenjoao.PNG">    
-            </div>   
-        </section>
-        
-        <div class="mid-aboutme">
-            <h2 class="aboutme___h2">Sobre Mim</h2>
-            <p class="aboutme__sbt"> Quem sou eu?</p>
-        </div>
-        
-        <section class="container aboutme">
-            
-            <div class="left-aboutme">
-                <img src="/assets/joaoabout.PNG" class="aboutme__img">
-            </div>
-            
-            <div class="right-aboutme">
-                <p class="aboutme__paragraph">Sou estudante de engenharia de software pela PUCPR e desenvolvedor front-end. Trabalho com tecnologias web, engenharia de software, UX/UI design e
-                desenvolvimento blockchain. <br> <br> Possuo certificado internacional de proficiência na língua inglesa pela Cambridge English(UK) e sou apaixonado pelo o que eu faço.</p>
-                <button id="btn-cv" class="default-btn" href="">Baixar CV &#8659;</button>
-            </div>
-            
+                <div class="aside">
+                    <a href="https://github.com/joaovictor-ferreira" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa__icon"></i></a>                
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-eth/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in fa__icon"></i></a>            
 
-        </section>
-        
-        <div class="skills__mid" id="skills">
-            <h2 class="skills__h2"  >Skills</h2>
-            <p class="subtitle-p">Minhas habilidades</p>
-        </div>
+                </div>
 
-        <section class="skills__container">
-        
-            <div class="left-skills">
-                <ul class="skills__frontend skills__default">
-                    
-                    <h3>Desenvolvimento Front-end</h3>
-                    <div>
-                        <i class="fa-brands fa-html5"></i>
-                        <li>HTML</li>
-                    </div>
-                    
-                    <div>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <li>CSS</li>
-                    </div>
-                    
-                    <div>
-                        <i class="fa-brands fa-square-js"></i>
-                        <li>Javascript</li>
-                    </div>
-                    
-                    <div>
-                        <img src="/assets/ts-icon.svg" id ="ts-img">
-                        <li>Typescript</li>
-                    </div>
-                    
-                    <div>
-                        <i class="fa-brands fa-react"></i>
-                        <li>React</li>
-                    </div>
-                    
-            
-                </ul>
+                <div class="left-homepage">
+                    <h1>Olá, eu sou o João!</h1>
+                <p class="subtitle-p">Desenvolvedor front-end</p>
+                <p class="home__paragraph">Experiência em desenvolvimento web, engenharia de requisitos e desenvolvimento blockchain, produzindo serviços qualificados.</p>
+                <button id="btn-contact" class="default-btn" href="">Contate-me &#8658;</button> 
+                </div>
                 
-                <ul class="skills__backend skills__default">
-                    <h3>Desenvolvimento Back-end</h3>
+                <div class="right-homepage"> 
+                    <img id="home__img" src="/assets/greenjoao.PNG">    
+                </div>   
 
-                    <div>
-                        <i class="fa-brands fa-java"></i>
-                        <li>Java</li>
+            </div>
+       
+            </div>
+            
+        </section>
+
+        
+        <section id="about-me-section">
+
+            <div class="container">
+                
+                <div class="title__container">
+                    <h1>Sobre Mim</h1>
+                    <p class="about-me__subtitle">Quem é João Victor?</p>
+                </div>
+                
+                <div class="content__container">
+                    <img src="/assets/joaoabout.PNG" class="aboutme__img">
+
+                    <div class="right__about-me">
+                        <p class="aboutme__paragraph">Sou estudante de engenharia de software pela PUCPR e desenvolvedor front-end. Trabalho com tecnologias web, tais quais Javascript, Typescript e React. Além disso, disponho de conhecimento em Java, Python & UX/UI design. <br> <br> Possuo certificado internacional de proficiência na língua inglesa pela Cambridge English(UK) e sou apaixonado pelo o que eu faço.</p>
+                        <button id="btn-cv" class="default-btn" href="">Baixar CV &#8659;</button>
                     </div>
 
-                    <div>
-                        <i class="fa-brands fa-python"></i>
-                        <li>Python</li>
-                    </div>
-
-
-                </ul>
+                </div>
             
             </div>
-  
-            <div class="right-skills">
-                <h3>UI/UX</h3>
-               
-                <ul class="skills__UXUI skills__default">
-                    <div>
-                        <i class="fa-brands fa-figma"></i>
-                        <li>Figma</li>
+
+        </section>
+
+        <section id="skills-section">
+
+            <div class="container">
+
+                <div class="title__container">
+                    <h2 class="skills__h2"  >Skills</h2>
+                    <p class="subtitle-p">Minhas habilidades</p>    
+                </div>
+
+                <div class="skills__container">
+                    <div class="hard__skills">
+                        <h3>Desenvolvimento Front-end</h3>
+                        <ul class="skills__default">
+                            
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <li>HTML</li>
+                            </div>
+                            
+                            <div>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <li>CSS</li>
+                            </div>
+                            
+                            <div>
+                                <i class="fa-brands fa-square-js"></i>
+                                <li>Javascript</li>
+                            </div>
+                            
+                            <div>
+                                <img src="/assets/ts-icon.svg" id ="ts-img">
+                                <li id="ts">Typescript</li>
+                            </div>
+                            
+                            <div>
+                                <i class="fa-brands fa-react"></i>
+                                <li>React</li>
+                            </div>
+                            
+                    
+                        </ul>
+                        
+                        
+                        <ul class="skills__default">
+                            
+                            <h3>Desenvolvimento Back-end</h3>
+        
+                            <div>
+                                <i class="fa-brands fa-java"></i>
+                                <li>Java</li>
+                            </div>
+        
+                            <div>
+                                <i class="fa-brands fa-python"></i>
+                                <li>Python</li>
+                            </div>
+        
+        
+                        </ul>
+                    
                     </div>
-                </ul>
+                    
+
+                    <div class="soft__skills">
+                      
+
+                       
+                        <ul class="skills__default">
+
+                            <h3>UX/UI</h3>
+                            <div>
+                                <i class="fa-brands fa-figma"></i>
+                                <li>Figma</li>
+                            </div>
+                        </ul>
+                        
+                        <h3>Idiomas</h3>
+                        
+                        <ul class="skills__default">
+                            <div>
+                                <i class="fa-brands fa-flag-usa"></i>
+                                <li>Inglês avançado</li>
+                            </div>
+                        </ul>
+                
+                    </div>
     
-                <ul class="skills__languages skills__default">
-                    <h3>Idiomas</h3>
-                    <div>
-                        <i class="fa-brands fa-flag-usa"></i>
-                        <li>Inglês avançado</li>
-                    </div>
-                </ul>
-        
+                </div>
+    
+                
             </div>
+
+        </section>
+        
+        <section id="portfolio-section" >
+
+            <div class="container">
+
+                <div class="title__container">
+                    <h2 class="portfolio__h2">Portfolio</h2>
+                    <p class="subtitle-p">Meus Projetos</p>
+                </div>
+
+                <div class="content__container">teste</div>
+
+            </div>
+
+        </section>
+    
+        
+        <section id="contact-section">
             
-        </section>
-        
-        <div class="mid-portfolio" id="portfolio">
-            <h2 class="portfolio__h2">Portfolio</h2>
-            <p class="subtitle-p">Meus Projetos</p>
-        </div>
-        
-        <section class="portfolio__container">
-        </section>
-        
-        <div class="contact__mid" id="contact">
-            <h2 class="contact__h2">Contate-me</h2>
-        </div>
+            <div class="container">
 
-        <div class="contact__container">
-            <ul class="left-contact">
-                <li><i class="fa fa-envelope fa__mail" aria-hidden="true"></i>joaovictor2111@gmail.com</li>
-            </ul>
-            <form class="right-contact">
+                <div class="title__container" id="contact">
+                    <h2 class="contact__h2">Contate-me</h2>
+                </div>
+    
+                <div class="top-align__container">
+
+                    <ul class="left-contact">
+                        <li><i class="fa fa-envelope fa__mail" aria-hidden="true"></i>devjoaovictorferreira@gmail.com</li>
+                        <li><i class="fa-brands fa-whatsapp"></i>(21)99320-4546</li>
+                    </ul>
+
+                    <form class="right-contact">
+                            
+                        <div class="input-container">
+                            <label for="input__name" class="input__label">Nome</label>
+                            <input type="text" id="input__name" class="default-input" required placeholder="Digite o seu nome">
+                            <label for="input__cellphone" class="input__label"> Telefone</label>
+                            <input type="tel" id="input__cellphone" class="default-input" required placeholder="(XX)XXXXX-XXXX">
+                            <label for="input__email" class="input__label">E-mail</label>
+                            <input type="email" id="input__email" class="default-input" required placeholder="Seuemail@dominio.com">
+                        
+                        </div>
+                        <div class="message-container">
+                            <legend class="legend__textarea">Mensagem</legend>
+                            <textarea name="Digite a sua mensagem" id="input__textarea" cols="60" rows="20" required placeholder="Digite a sua mensagem"></textarea>
+                            <input type="submit" value="Enviar" class="submit-btn">
+                        </div>
+                        
+    
+                    </form>
                     
-                <div class="input-container">
-                    <label for="input__name" class="input__label">Nome</label>
-                    <input type="text" id="input__name" class="default-input" required placeholder="Digite o seu nome">
-                    <label for="input__cellphone" class="input__label"> Telefone</label>
-                    <input type="tel" id="input__cellphone" class="default-input" required placeholder="(XX)XXXXX-XXXX">
-                    <label for="input__email" class="input__label">E-mail</label>
-                    <input type="email" id="input__email" class="default-input" required placeholder="Seuemail@dominio.com">
-                
                 </div>
-                <div class="message-container">
-                    <legend class="legend__textarea">Mensagem</legend>
-                    <textarea name="Digite a sua mensagem" id="input__textarea" cols="60" rows="20" required placeholder="Digite a sua mensagem"></textarea>
-                    <input type="submit" value="Enviar" class="submit-btn">
-                </div>
-                
-
-            </form>
-        </div>
+            </div>
+         
+        </section>
     </main> 
 </body>
-<footer class=footer__container>
+
+<footer id=footer-section>
+
     <div class="footer__content">
-        <div class="footer__icons">
             <i class="fa-brands fa-github fa__footer"></i>
             <i class="fa-brands fa-linkedin-in fa__footer"></i>
-            <i class="fa-brands fa-twitter fa__footer"></i>
-        </div>
+            <i class="fa-brands fa-square-instagram fa__footer"></i>
+    <div>
 </footer>
 </html>
