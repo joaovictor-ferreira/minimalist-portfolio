@@ -207,16 +207,18 @@
                     </ul>
 
                     <form class="right-contact">
-                            
+
                         <div class="input-container">
                             <label for="input__name" class="input__label">Nome</label>
-                            <input type="text" id="input__name" class="default-input" required placeholder="Digite o seu nome">
-                            <label for="input__cellphone" class="input__label"> Telefone</label>
-                            <input type="tel" id="input__cellphone" class="default-input" required placeholder="(XX)XXXXX-XXXX">
-                            <label for="input__email" class="input__label">E-mail</label>
-                            <input type="email" id="input__email" class="default-input" required placeholder="Seuemail@dominio.com">
+                            <input type="text" id="input__name" class="default-input" required pattern="^[a-zA-ZÀ-ÿ]+(?:\s+[a-zA-ZÀ-ÿ]+)*$" placeholder="Digite o seu nome">
                         
+                            <label for="input__cellphone" class="input__label">Telefone</label>
+                            <input type="tel" id="input__cellphone" class="default-input" required pattern="^\(\d{2}\)\d{5}-\d{4}$" placeholder="(XX)XXXXX-XXXX">
+                        
+                            <label for="input__email" class="input__label">E-mail</label>
+                            <input type="email" id="input__email" class="default-input" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder="Seuemail@dominio.com">
                         </div>
+                        
                         <div class="message-container">
                             <legend class="legend__textarea">Mensagem</legend>
                             <textarea name="Digite a sua mensagem" id="input__textarea" cols="60" rows="20" required placeholder="Digite a sua mensagem"></textarea>
@@ -237,9 +239,9 @@
         <div class="footer__container">
 
             <div class="footer__content">
-                <i class="fa-brands fa-github fa__footer"></i>
-                <i class="fa-brands fa-linkedin-in fa__footer"></i>
-                <i class="fa-brands fa-instagram fa__footer"></i>
+                <a href="https://github.com/joaovictor-ferreira" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github"></i> </a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-eth/" target="_blank" rel="noopener noreferrer""> <i class="fa-brands fa-linkedin-in fa__footer"></i> </a>
+                <a href="https://www.instagram.com/joaovictor.eth/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-instagram fa__footer"></i> </a>
             <div>
                 <!--<p>&copy; 2023, por João Victor Ferreira. Todos os direitos reservados.</p> -->
         </div>

@@ -438,25 +438,31 @@ h3 {
     color: #FFFFFF;
 
 }
-.fa__footer {
+.fa-linkedin-in, .fa-instagram {
     padding-top: 2em;
-    width: 3em;
+    margin-left: 1em;
     color: var(--light-text-color);
 }
 
-.fa__footer:first-child:hover {
+.fa-github {
+    padding-top: 2em;
+    color: var(--light-text-color);
+}
+
+.fa-github:hover {
     transition: all .5s ease-out;
     transform: translateY(-5px);
     cursor: pointer;
     color: #eaeaea;
 }
-.fa__footer:nth-child(2):hover{
+
+.fa-linkedin-in:hover {
     transition: all .5s ease-out;
     transform: translateY(-5px);
     cursor: pointer;
     color: #0077B5;
 }
-.fa__footer:nth-child(3):hover{
+.fa-instagram:hover{
     transition: all .5s ease-out;
     transform: translateY(-5px);
     cursor: pointer;
