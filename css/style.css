@@ -396,6 +396,7 @@ h3 {
 .submit-btn {
     align-self: flex-end;
     background: #f3f3f3;
+    color: var(--light-text-color);
     max-width: 90%;
     letter-spacing: 0.1em;
     width: 10em;
@@ -415,24 +416,22 @@ h3 {
 /*-- footer -- */
 #footer-section {
     background: #75ed8b;
-    width: 100%;
-    min-height: 200px;
+    min-height: 20vh;
 }
 .footer__container {
     width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    margin: 10em auto;
+    padding-top: 5em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .footer__content{
     display: flex;
-    flex-direction: row;
-    height: 200px;
     justify-content: center;
-    align-items: center;
 }
 .footer__h2 {
     font-size: 3em;
@@ -503,7 +502,9 @@ h3 {
     #contact-section {
         padding-bottom: 10rem;
     }
-
+    .footer__container {
+        width: 100%;
+    }
     .footer__content {
         width: 100%;
     }

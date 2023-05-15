@@ -39,7 +39,7 @@ function toggleDarkMode() {
     // Modo escuro ativo
     body.classList.remove('dark-mode');
     menuContainer.classList.remove('dark-mode');
-
+    menuContainer.style.background = '#ffffff'
     aboutMe.style.background = 'transparent';
     home.style.background = 'transparent';
     darkModeBtn.classList.remove("fa-lightbulb");
