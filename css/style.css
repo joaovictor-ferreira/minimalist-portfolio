@@ -70,6 +70,8 @@ i {
 
 .menu__ul{
     display: flex;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 .nav__li{
@@ -330,7 +332,7 @@ h3 {
 }
 
 .right-contact {
-    max-width: 70%;
+    max-width: 100%;
     margin: 0 0 3em 0;
     background-color: #75ed8b;
     height: 700px;
@@ -379,6 +381,7 @@ h3 {
 }
 .submit-btn {
     align-self: flex-end;
+    background: #f3f3f3;
     max-width: 90%;
     letter-spacing: 0.1em;
     width: 10em;
@@ -402,12 +405,10 @@ h3 {
     height: 200px;
 }
 .footer__container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
 }
 
@@ -496,7 +497,7 @@ h3 {
 @media(max-width: 768px){
 
     .menu__ul{
-        display: block;
+        display: none;
         position: absolute;
         top: 75px;
         background-color: var(--primary-color);
@@ -582,5 +583,8 @@ h3 {
     }
     .left-contact {
         margin-bottom: 2em;
+    }
+    .right-contact{
+        width: 90%;
     }
 }
