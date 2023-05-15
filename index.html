@@ -8,25 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header id="menu">
          <nav class="menu__container">
              <h4>João Victor Ferreira</h4>   
              <ul class="menu__ul" id="menu-redirect">
-                 <li class="nav__li"><a href="#home-section" class="active">home</a></li>
-                 <li class="nav__li"><a href="#about-me-section">Sobre</a></li>
-                 <li class="nav__li"><a href="#skills-section">skills</a></li>
-                 <li class="nav__li"><a href="#portfolio-section">portfolio</a></li>
-                 <li class="nav__li"><a href="#contact-section">contato</a></li>
+                 <li class="nav__li"><a class= "dark-item" href="#home-section">home</a></li>
+                 <li class="nav__li"><a class= "dark-item" href="#about-me-section">Sobre</a></li>
+                 <li class="nav__li"><a class= "dark-item" href="#skills-section">skills</a></li>
+                 <li class="nav__li"><a class= "dark-item" href="#portfolio-section">portfolio</a></li>
+                 <li class="nav__li"><a class= "dark-item" href="#contact-section">contato</a></li>
              </ul>
 
-             <i class="fa-regular fa-moon dark-mode-btn fa-xl" ></i>
-             <i class="fa-solid fa-bars" id="toggle"></i>
+             <i class="fa-regular fa-moon dark-mode-btn fa-xl dark-item" ></i>
+             <i class="fa-solid fa-bars dark-item" id="toggle"></i>
          </nav>
     </header>
     <main>  
-        <section id="home-section">
+        <section id="home-section" >
             <div class="container">
 
             <div class="content__container">
@@ -40,7 +43,7 @@
                 <div class="left-homepage">
                     <h1>Olá, eu sou o João!</h1>
                 <p class="subtitle-p">Desenvolvedor front-end</p>
-                <p class="home__paragraph">Experiência em desenvolvimento web, engenharia de requisitos e desenvolvimento blockchain, produzindo serviços qualificados.</p>
+                <p class="home__paragraph dark-item">Experiência em desenvolvimento web, engenharia de requisitos e desenvolvimento blockchain, produzindo serviços qualificados.</p>
                 <a href="#contact-section"><button id="btn-contact" class="default-btn" href="#contact-section">Contate-me &#8658;</button></a>
                 </div>
                 
@@ -55,7 +58,7 @@
         </section>
 
         
-        <section id="about-me-section">
+        <section id="about-me-section" class="fade-down">
 
             <div class="container">
                 
@@ -68,7 +71,7 @@
                     <img src="assets/joaoabout.PNG" class="aboutme__img">
 
                     <div class="right__about-me">
-                        <p class="aboutme__paragraph">Sou estudante de engenharia de software pela PUCPR e desenvolvedor front-end. Trabalho com tecnologias web, tais quais Javascript, Typescript e React. Além disso, disponho de conhecimento em Java, Python & UX/UI design. <br> <br> Possuo certificado internacional de proficiência na língua inglesa pela Cambridge English(UK) e sou apaixonado pelo o que eu faço.</p>
+                        <p class="aboutme__paragraph dark-item">Sou estudante de engenharia de software pela PUCPR e desenvolvedor front-end. Trabalho com tecnologias web, tais quais Javascript, Typescript e React. Além disso, disponho de conhecimento em Java, Python & UX/UI design. <br> <br> Possuo certificado internacional de proficiência na língua inglesa pela Cambridge English(UK) e sou apaixonado pelo o que eu faço.</p>
                         <button id="btn-cv" class="default-btn" href="">Baixar CV &#8659;</button>
                     </div>
 
@@ -78,7 +81,7 @@
 
         </section>
 
-        <section id="skills-section">
+        <section id="skills-section"  class="fade-down">
 
             <div class="container">
 
@@ -93,28 +96,28 @@
                         <ul class="skills__default">
                             
                             <div>
-                                <i class="fa-brands fa-html5"></i>
-                                <li>HTML</li>
+                                <i class="fa-brands fa-html5 dark-item"></i>
+                                <li class="dark-item">HTML</li>
                             </div>
                             
                             <div>
-                                <i class="fa-brands fa-css3-alt"></i>
-                                <li>CSS</li>
+                                <i class="fa-brands fa-css3-alt dark-item"></i>
+                                <li class="dark-item">CSS</li>
                             </div>
                             
                             <div>
-                                <i class="fa-brands fa-square-js"></i>
-                                <li>Javascript</li>
+                                <i class="fa-brands fa-square-js dark-item"></i>
+                                <li class="dark-item">Javascript</li>
                             </div>
                             
                             <div>
-                                <img src="/assets/ts-icon.svg" id ="ts-img">
-                                <li id="ts">Typescript</li>
+                                <i class="fa-solid fa-file-code dark-item"></i>
+                                <li class="dark-item">Typescript</li>
                             </div>
                             
                             <div>
-                                <i class="fa-brands fa-react"></i>
-                                <li>React</li>
+                                <i class="fa-brands fa-react dark-item"></i>
+                                <li class="dark-item">React</li>
                             </div>
                             
                     
@@ -126,13 +129,13 @@
                             <h3>Desenvolvimento Back-end</h3>
         
                             <div>
-                                <i class="fa-brands fa-java"></i>
-                                <li>Java</li>
+                                <i class="fa-brands fa-java dark-item"></i>
+                                <li class="dark-item">Java</li>
                             </div>
         
                             <div>
-                                <i class="fa-brands fa-python"></i>
-                                <li>Python</li>
+                                <i class="fa-brands fa-python dark-item"></i>
+                                <li class="dark-item">Python</li>
                             </div>
         
         
@@ -149,8 +152,8 @@
 
                             <h3>UX/UI</h3>
                             <div>
-                                <i class="fa-brands fa-figma"></i>
-                                <li>Figma</li>
+                                <i class="fa-brands fa-figma dark-item"></i>
+                                <li class="dark-item">Figma</li>
                             </div>
                         </ul>
                         
@@ -158,8 +161,8 @@
                         
                         <ul class="skills__default">
                             <div>
-                                <i class="fa-brands fa-flag-usa"></i>
-                                <li>Inglês avançado</li>
+                                <i class=" fa-solid fa-flag-usa dark-item"></i>
+                                <li class="dark-item">Inglês avançado</li>
                             </div>
                         </ul>
                 
@@ -172,35 +175,49 @@
 
         </section>
         
-        <section id="portfolio-section" >
+        <section id="portfolio-section"  class="fade-down dark-item" >
 
             <div class="container">
 
                 <div class="title__container">
-                    <h2 class="portfolio__h2">Portfolio</h2>
+                    <h2 class="portfolio__h2 dark-item">Portfolio</h2>
                     <p class="subtitle-p">Meus Projetos</p>
                 </div>
 
-                <div class="content__container">teste</div>
+                <div class="content__container">
+                    <div class="glider-contain">
+                        <div class="glider">
+                          <div>Slide 1</div>
+                          <div>Slide 2</div>
+                          <div>Slide 3</div>
+                          <div>Slide 4</div>
+                          <div>Slide 5</div>
+                          <div>Slide 6</div>
+                        </div>
+                        <button class="glider-prev">Anterior</button>
+                        <button class="glider-next">Próximo</button>
+                      </div>
+                      
+                </div>
 
             </div>
 
         </section>
     
         
-        <section id="contact-section">
+        <section id="contact-section"  class="fade-down">
             
             <div class="container">
 
                 <div class="title__container" id="contact">
-                    <h2 class="contact__h2">Contate-me</h2>
+                    <h2 class="contact__h2 dark-item">Contate-me</h2>
                 </div>
     
                 <div class="top-align__container">
 
                     <ul class="left-contact">
-                        <li><i class="fa fa-envelope fa__mail" aria-hidden="true"></i>devjoaovictorferreira@gmail.com</li>
-                        <li><i class="fa-brands fa-whatsapp"></i>(21)99320-4546</li>
+                        <li class="dark-item"><i class="fa fa-envelope fa__mail dark-item" aria-hidden="true"></i>devjoaovictorferreira@gmail.com</li>
+                        <li class="dark-item"><i class="fa-brands fa-whatsapp dark-item"></i>(21)99320-4546</li>
                     </ul>
 
                     <form class="right-contact">
@@ -236,11 +253,12 @@
             <div class="footer__content">
                 <i class="fa-brands fa-github fa__footer"></i>
                 <i class="fa-brands fa-linkedin-in fa__footer"></i>
-                <i class="fa-brands fa-square-instagram fa__footer"></i>
+                <i class="fa-brands fa-instagram fa__footer"></i>
             <div>
         </div>
     
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="/js/index.js"></script>
 </body>    
 </html>

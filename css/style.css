@@ -4,10 +4,14 @@
     font-family: 'Poppins', sans-serif;
     --light-bg-color: #ffffff;
     --dark-bg-color: #000000;
-    --light-text-color: #1D1D1D;
+    --light-text-color: #1d1d1d;
     --dark-text-color: #e6edf3;
     --primary-color: #75ed8b;
 
+}
+.glider-contain {
+    width: 800px;
+    margin: 0 auto;
 }
 
 html {
@@ -50,11 +54,15 @@ i {
     color: var(--light-text-color)
 }
 
+.dark-mode {
+    background: var(--dark-bg-color);
+    color: var(--dark-text-color);
+}
 /* ---navbar--- */
 #menu {
     padding: 20px 0px;
     width: 100%;
-    background: var(--light-bg-color);
+    background-color:white;
     position:fixed;
     top: 0;
     z-index: 2;
@@ -79,7 +87,6 @@ i {
 }
 
 .menu__ul a {
-    color: var(--light-text-color);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -104,8 +111,14 @@ i {
 
 #toggle {
     display: none;
+    position: absolute;
+    right:15px;
+    bottom: 16px;
+    
 }
-
+#toggle:hover {
+    cursor:pointer;
+}
 /*containers para controle de conteúdo */
 .title__container {
     display: flex;
@@ -216,7 +229,7 @@ i {
  }
  
 #about-me-section h2 {
-    color:#1D1D1D;
+    color: var(--light-text-color);
     font-weight: bold;
 
 }
@@ -272,14 +285,13 @@ i {
     
 }
 .skills__h2 {
-    color: var(--text-color);
     font-size: 3em ;
     font-weight: bold;
     margin: 0 0 0.25em 0;
 }
 
 h3 {
-    color: #75ed8b;
+    color: var(--primary-color);
     font-size: 1.2em;
     font-weight: 800;
     margin: 1em 0 1em 0;
@@ -352,6 +364,7 @@ h3 {
     border-radius: 0.3em;
 }
 .input__label {
+    color: var(--light-text-color);
     margin: 0 0 0.75em 0;
 }
 
@@ -371,6 +384,7 @@ h3 {
 
 .legend__textarea {
     margin: 0 auto 1em auto;
+    color: var(--light-text-color);
 }
 
 #input__textarea {
@@ -402,13 +416,14 @@ h3 {
 #footer-section {
     background: #75ed8b;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
 }
 .footer__container {
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 
@@ -481,7 +496,8 @@ h3 {
     }
 
     #home__img{
-        width: 300px;
+        width: 350px;
+        margin-bottom: 3rem;
     }
 
     #contact-section {
@@ -495,6 +511,10 @@ h3 {
 }
 
 @media(max-width: 768px){
+
+    h1{
+        font-size: 2.15rem;
+    }
 
     .menu__ul{
         display: none;
@@ -585,6 +605,6 @@ h3 {
         margin-bottom: 2em;
     }
     .right-contact{
-        width: 90%;
+        width: 100%;
     }
 }
