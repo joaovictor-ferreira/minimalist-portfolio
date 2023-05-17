@@ -11,6 +11,7 @@ const fadeDownItems = document.querySelectorAll(".fade-down > *");
 const darkModeBtn = document.querySelector(".dark-mode-btn");
 const darkModeItems = document.querySelectorAll(".dark-item")
 
+//funcao para toggle mobile
 
 navToggle.addEventListener("click", () => {
     if (menu.style.display === "none") {
@@ -28,6 +29,7 @@ navToggle.addEventListener("click", () => {
     }
   });
   
+  //evento que invoca a funcao de toggleDarkMode
 darkModeBtn.addEventListener("click", () => {
   toggleDarkMode()
 })
@@ -41,7 +43,7 @@ function toggleDarkMode() {
     menuContainer.classList.remove('dark-mode');
     menuContainer.style.background = '#ffffff'
     aboutMe.style.background = 'transparent';
-    home.style.background = 'transparent';
+    home.style.backgroundImage = 'url(/assets/waves-bg.svg)';
     darkModeBtn.classList.remove("fa-lightbulb");
     darkModeBtn.classList.add("fa-moon");
     darkModeItems.forEach(element => {
