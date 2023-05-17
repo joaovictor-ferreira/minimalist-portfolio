@@ -612,7 +612,12 @@ h3 {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
-
+    .wrapper i:first-child{
+        left: 5px;
+    }
+    .wrapper i:last-child{
+        right: 5px;
+    }
     #contact-section {
         padding-bottom: 10rem;
     }
@@ -725,7 +730,12 @@ h3 {
     .wrapper .carousel {
         grid-auto-columns: 100%;
     }
-
+    .wrapper i:first-child{
+        left: 5px;
+    }
+    .wrapper i:last-child{
+        right: 5px;
+    }
     .left-contact {
         margin-bottom: 2em;
     }
