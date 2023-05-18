@@ -320,20 +320,22 @@ h3 {
 
 #portfolio-section{
     height: 100vh;
+    width: 100%;
+   
 }
 
 .portfolio__h2 {
     color: #1D1D1D;
     font-weight: bold;
     font-size: 3em;
-    margin: 4em 0 0 0;
+    margin: 0 0 0;
 }
 
 .wrapper {
     max-width: 1200px;
     width: 100%;
     position: relative;
-    margin-top: 4em;
+    margin: 2em auto 0 auto;
 
 }
 .wrapper i {
@@ -459,6 +461,9 @@ h3 {
 .fa__mail, .fa-whatsapp{
     margin-bottom: 0.5em;
     margin-right: 0.3em;
+}
+.social__media a {
+    text-decoration: none;
 }
 .default-input {
     margin: 0 0 1em 0.2em;
